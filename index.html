@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V² Labs - Automatización de Procesos con IA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0A0A0A;
+            color: #E2E8F0;
+        }
+        .hero-gradient {
+            background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(220, 38, 38, 0.3), rgba(255, 255, 255, 0));
+        }
+        .section-gradient {
+            background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(159, 18, 57, 0.1), rgba(255, 255, 255, 0));
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            border-color: #DC2626;
+        }
+        .glow-effect {
+            box-shadow: 0 0 5px rgba(239, 68, 68, 0.4), 0 0 10px rgba(239, 68, 68, 0.3), 0 0 15px rgba(239, 68, 68, 0.2);
+        }
+        .scroll-animation {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .scroll-animation.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-black/50 backdrop-blur-lg border-b border-gray-800">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <div class="bg-white rounded-full p-1 flex justify-center items-center">
+                    <svg class="h-8 w-8 text-black" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 6.5l3 3-3 3v-6zm3 0v6l3-3-3-3z"/>
+                        <path d="M9 12l1.5 1.5L9 15v-3zm1.5-1.5L9 9v3l1.5-1.5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1.5-11.5l3 3-3 3v-6zm3 0v6l3-3-3-3z" opacity="0.4"/>
+                    </svg>
+                </div>
+                <span class="text-2xl font-bold text-white">V<sup>2</sup> Labs</span>
+            </div>
+            <!-- Navigation -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#services" class="text-gray-300 hover:text-red-500 transition-colors">Servicios</a>
+                <a href="#partnership" class="text-gray-300 hover:text-red-500 transition-colors">Innovación</a>
+                <a href="#contact" class="text-gray-300 hover:text-red-500 transition-colors">Contacto</a>
+            </nav>
+            <a href="https://wa.link/twdndo" target="_blank" class="hidden md:inline-block bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-5 rounded-lg transition-transform duration-300 ease-in-out hover:scale-105">
+                Contáctanos
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="pt-32 pb-20 md:pt-48 md:pb-32 relative overflow-hidden hero-gradient">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-black text-white leading-tight mb-4 scroll-animation">
+                    Llevamos tus procesos <br> al <span class="text-red-500">siguiente nivel</span>.
+                </h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-300 mb-8 scroll-animation" style="transition-delay: 150ms;">
+                    Fusionamos la creatividad humana con la precisión de la Inteligencia Artificial para automatizar tareas, reducir costos e impulsar tu productividad.
+                </p>
+                <div class="scroll-animation" style="transition-delay: 300ms;">
+                    <a href="#services" class="bg-red-600 hover:bg-red-700 text-white font-bold text-lg py-3 px-8 rounded-lg transition-transform duration-300 ease-in-out hover:scale-105 inline-block glow-effect">
+                        Descubre cómo
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 md:py-32 section-gradient">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white scroll-animation">AI: Reclama tu Tiempo y Potencia tu Negocio</h2>
+                    <p class="text-lg text-gray-400 mt-2 max-w-2xl mx-auto scroll-animation" style="transition-delay: 150ms;">Transforma tu flujo de trabajo con soluciones inteligentes.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-gray-900/50 border border-gray-800 rounded-xl p-8 card-hover transition-all duration-300 scroll-animation">
+                        <div class="text-red-500 mb-4">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                           </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Aumenta la Productividad</h3>
+                        <p class="text-gray-400">Automatiza tareas repetitivas y libera a tu equipo para que se concentre en lo que realmente importa: la estrategia y el crecimiento.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-gray-900/50 border border-gray-800 rounded-xl p-8 card-hover transition-all duration-300 scroll-animation" style="transition-delay: 150ms;">
+                        <div class="text-red-500 mb-4">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6" />
+                             </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Reduce los Costos</h3>
+                        <p class="text-gray-400">Optimiza la asignación de recursos y minimiza errores, logrando una operación más eficiente y rentable.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="bg-gray-900/50 border border-gray-800 rounded-xl p-8 card-hover transition-all duration-300 scroll-animation" style="transition-delay: 300ms;">
+                        <div class="text-red-500 mb-4">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                             </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Entrega más Rápido</h3>
+                        <p class="text-gray-400">Acelera tus ciclos de entrega y mejora la calidad de tus productos o servicios con la agilidad que solo la IA puede ofrecer.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partnership Section -->
+        <section id="partnership" class="py-20 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2 scroll-animation">
+                        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">La Colaboración Definitiva</h2>
+                        <p class="text-red-500 font-semibold text-lg mb-6">Creatividad Humana + Innovación IA</p>
+                        <p class="text-gray-300 mb-4">
+                            Creemos que el verdadero potencial se desbloquea en la sinergia entre la mente humana y la inteligencia artificial. No se trata de reemplazar, sino de potenciar.
+                        </p>
+                        <p class="text-gray-300">
+                            Nuestras soluciones están diseñadas para ser el copiloto perfecto de tu equipo, combinando la intuición, estrategia y creatividad humana con la velocidad, precisión y capacidad de análisis de la IA.
+                        </p>
+                    </div>
+                    <div class="md:w-1/2 relative scroll-animation" style="transition-delay: 150ms;">
+                        <div class="absolute inset-0 bg-red-600/20 blur-3xl rounded-full"></div>
+                        <img src="https://placehold.co/600x400/0A0A0A/DC2626?text=Human+%2B+AI" alt="Ilustración de IA y Creatividad Humana" class="relative rounded-xl shadow-2xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact CTA Section -->
+        <section id="contact" class="py-20 md:py-32 section-gradient">
+            <div class="container mx-auto px-6 text-center">
+                 <h2 class="text-3xl md:text-5xl font-bold text-white max-w-3xl mx-auto scroll-animation">¿Listo para impulsar la revolución de la IA en tu empresa?</h2>
+                 <p class="text-lg text-gray-300 mt-4 mb-10 max-w-2xl mx-auto scroll-animation" style="transition-delay: 150ms;">
+                     Hablemos de cómo podemos ayudarte a alcanzar tus objetivos.
+                 </p>
+                 <div class="scroll-animation" style="transition-delay: 300ms;">
+                     <a href="https://wa.link/twdndo" target="_blank" class="bg-white hover:bg-gray-200 text-black font-bold text-lg py-4 px-10 rounded-lg transition-transform duration-300 ease-in-out hover:scale-105 inline-block">
+                         Iniciar Conversación
+                     </a>
+                 </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="border-t border-gray-800">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-500">
+            <p>&copy; 2024 V² Labs. Todos los derechos reservados.</p>
+            <p class="mt-2 text-sm">Innovación y Automatización para el futuro de los negocios.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const animatedElements = document.querySelectorAll('.scroll-animation');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            animatedElements.forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
